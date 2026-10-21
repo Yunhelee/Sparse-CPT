@@ -29,6 +29,7 @@ The environment can be created using:
 
 ```bash
 conda env create -f environment.yml
+```
 
 ## Main Experiments
 
