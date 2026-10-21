@@ -29,7 +29,7 @@ Environment configuration and dependency information for Sparse-CPT will be prov
 
 ## Main Experiments
 
-This repository will provide the code for the main experiments of Sparse-CPT, including test case generation and evaluation of cross-prompt transferability and visual fidelity on three LVLMs:
+This repository provide the code for the main experiments of Sparse-CPT, including test case generation and evaluation of cross-prompt transferability and visual fidelity on three LVLMs:
 
 - OpenFlamingo-9B
 - InstructBLIP Vicuna-7B
@@ -55,7 +55,8 @@ python test.py \
   --target_text "unknown" \
   --generator_checkpoint /path/to/generator.pt \
   --clip_model_path /path/to/clip-vit-large-patch14 \
-  --use_generator_sparse_mask
+  --use_generator_sparse_mask \
+  --prompt_grad_method pcgrad_graddrop \
 ```
 
 
