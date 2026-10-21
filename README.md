@@ -21,7 +21,7 @@ The two confirmed entry points are:
 
 ## Environment
 
-The recorded server environment uses Python 3.9.23, PyTorch 2.0.1 with CUDA 11.7, and torchvision 0.15.2. The project uses CroPA's customized Transformers implementation based on version 4.33.2; installing the stock Transformers package alone is not an equivalent setup.
+The recorded server environment uses Python 3.9, PyTorch 2.0.1 with CUDA 11.7, and torchvision 0.15.2. The project uses CroPA's customized Transformers implementation based on version 4.33.2; installing the stock Transformers package alone is not an equivalent setup.
 
 ## Requirements
 
