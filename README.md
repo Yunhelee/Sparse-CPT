@@ -12,6 +12,17 @@ Sparse-CPT extends the cross-prompt adversarial transferability setting of [CroP
 - **Prompt-Aware Gradient Consensus (PGC):** Mitigates conflicts among prompt-specific gradients and modulates perturbation updates according to directional agreement.
 - **Cross-Iteration Weighted Perturbation Smoothing (CPS):** Aggregates perturbation states across iterations using an exponential moving average.
 
+## Release scope
+
+The two confirmed entry points are:
+
+- `test.py`: Generates test cases using a trained perturbation generator.
+- `train.py`: Trains the perturbation generator.
+
+## Environment
+
+The recorded server environment uses Python 3.9.23, PyTorch 2.0.1 with CUDA 11.7, and torchvision 0.15.2. The project uses CroPA's customized Transformers implementation based on version 4.33.2; installing the stock Transformers package alone is not an equivalent setup.
+
 ## Requirements
 
 Environment configuration and dependency information for Sparse-CPT will be provided with the source code.
