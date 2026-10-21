@@ -28,10 +28,6 @@ We evaluate cross-prompt transferability and visual fidelity across six predefin
 
 Installation instructions, model preparation, and reproduction commands will be provided with the corresponding source code.
 
-## Experimental Results
+## Main Experiments
 
-The repository will provide materials for reproducing the main experimental results, component ablation studies, and hyperparameter sensitivity analyses.
-
-## Citation
-
-Citation information will be updated upon publication.
+This repository will provide the source code for the main experiments of Sparse-CPT, including cross-prompt transferable test case generation and the evaluation of cross-prompt transferability and visual fidelity on OpenFlamingo, InstructBLIP, and BLIP-2.
