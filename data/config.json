@@ -1,0 +1,5 @@
+{
+    "data_root": "/path/to/coco2014",
+    "flamingo_checkpoint_path": "/path/to/OpenFlamingo-9B-deprecated/checkpoint.pt",
+    "eval_batch_size": 10
+}
