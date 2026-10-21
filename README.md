@@ -2,32 +2,29 @@
 
 **Sparse-CPT: Cross-Prompt Transferable Test Case Generation for Large Vision-Language Models via Sparse Perturbations**
 
-Official implementation of **Sparse-CPT**, an automated robustness testing approach for large vision-language models (LVLMs).
-
-Sparse-CPT generates cross-prompt transferable test cases using sparse visual perturbations, aiming to preserve visual fidelity while maintaining effective cross-prompt transferability.
+This repository contains the implementation of **Sparse-CPT**, an automated robustness testing approach for large vision-language models (LVLMs) that generates cross-prompt transferable test cases using sparse visual perturbations.
 
 ## Overview
 
-Sparse-CPT consists of three complementary components:
+Sparse-CPT extends the cross-prompt adversarial transferability setting of [CroPA](https://github.com/Haochen-Luo/CroPA) by incorporating three complementary mechanisms:
 
-- **Adversarial Vulnerability-Guided Perturbation Localization (AVL):** Identifies image locations with higher estimated attack potential and constructs a sparse perturbation mask.
-- **Prompt-Aware Gradient Consensus (PGC):** Mitigates gradient conflicts across different prompts and modulates perturbation updates based on directional agreement.
+- **Adversarial Vulnerability-Guided Perturbation Localization (AVL):** Identifies image locations with high estimated attack potential and constructs a sparse perturbation mask.
+- **Prompt-Aware Gradient Consensus (PGC):** Mitigates conflicts among prompt-specific gradients and modulates perturbation updates according to directional agreement.
 - **Cross-Iteration Weighted Perturbation Smoothing (CPS):** Aggregates perturbation states across iterations using an exponential moving average.
 
-## Evaluated Models
+## Requirements
 
-Our experiments cover three LVLMs:
+Environment configuration and dependency information for Sparse-CPT will be provided with the source code.
+
+## Main Experiments
+
+This repository will provide the code for the main experiments of Sparse-CPT, including test case generation and evaluation of cross-prompt transferability and visual fidelity on three LVLMs:
 
 - OpenFlamingo-9B
 - InstructBLIP Vicuna-7B
 - BLIP-2 OPT-2.7B
 
-We evaluate cross-prompt transferability and visual fidelity across six predefined target texts and four downstream tasks.
 
-## Installation and Usage
+## Acknowledgements
 
-Installation instructions, model preparation, and reproduction commands will be provided with the corresponding source code.
-
-## Main Experiments
-
-This repository will provide the source code for the main experiments of Sparse-CPT, including cross-prompt transferable test case generation and the evaluation of cross-prompt transferability and visual fidelity on OpenFlamingo, InstructBLIP, and BLIP-2.
+This work builds upon the cross-prompt adversarial transferability framework introduced by [CroPA](https://github.com/Haochen-Luo/CroPA). We sincerely thank the authors of CroPA for making their code and evaluation protocol publicly available. Sparse-CPT extends this research setting by introducing adversarial vulnerability-guided perturbation localization, prompt-aware gradient consensus, and cross-iteration weighted perturbation smoothing.
