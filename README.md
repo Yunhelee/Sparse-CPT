@@ -39,20 +39,24 @@ This repository will provide the code for the main experiments of Sparse-CPT, in
 
 ### Train the Perturbation Generator
 
+```bash
 python pretrained_model/train.py \
   --model_name open_flamingo \
   --target_text "unknown" \
   --clip_model_path /path/to/clip-vit-large-patch14 \
   --save_dir /path/to/save/checkpoints
+```
 
 ### Generate Test Cases
+
+```bash
 python test.py \
   --model_name open_flamingo \
   --target_text "unknown" \
   --generator_checkpoint /path/to/generator.pt \
   --clip_model_path /path/to/clip-vit-large-patch14 \
-  --use_generator_sparse_mask \
-
+  --use_generator_sparse_mask
+```
 
 
 ## Acknowledgements
