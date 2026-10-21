@@ -25,7 +25,10 @@ The recorded server environment uses Python 3.9, PyTorch 2.0.1 with CUDA 11.7, a
 
 ## Requirements
 
-Environment configuration and dependency information for Sparse-CPT will be provided with the source code.
+The environment can be created using:
+
+```bash
+conda env create -f environment.yml
 
 ## Main Experiments
 
