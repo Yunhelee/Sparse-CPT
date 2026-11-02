@@ -66,4 +66,4 @@ python test.py \
 
 ## Acknowledgements
 
-This work builds upon the cross-prompt adversarial transferability framework introduced by [CroPA](https://github.com/Haochen-Luo/CroPA). We sincerely thank the authors of CroPA for making their code and evaluation protocol publicly available. Sparse-CPT extends this research setting by introducing adversarial vulnerability-guided perturbation localization, prompt-aware gradient consensus, and cross-iteration weighted perturbation smoothing.
+This work builds upon the cross-prompt adversarial transferability framework introduced by [CroPA](https://github.com/Haochen-Luo/CroPA). We sincerely thank the authors of CroPA for making their code and evaluation protocol publicly available. 
