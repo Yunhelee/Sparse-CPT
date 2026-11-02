@@ -66,4 +66,4 @@ python test.py \
 
 ## Acknowledgements
 
-This work builds upon the cross-prompt adversarial transferability framework introduced by [CroPA](https://github.com/Haochen-Luo/CroPA). We sincerely thank the authors of CroPA for making their code and evaluation protocol publicly available. 
+We thank the authors of [CroPA](https://github.com/Haochen-Luo/CroPA) for publicly releasing their code and evaluation protocol, which facilitated the development of this work.
